@@ -1,13 +1,9 @@
 "use client";
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import NavbarComponents from "@/components/layouts/NavbarComponent";
-import { useFetchDataArticle } from "@/hooks/useFetchDataArticle";
 import ArticleComponent from "@/components/ArticleComponent";
 
 export default function HomePage() {
-  const { loading, data } = useFetchDataArticle();
-  console.log(data, "data");
 
   return (
     <div className="flex flex-col min-h-screen absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
